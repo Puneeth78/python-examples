@@ -1,6 +1,6 @@
-1️⃣ Create and Print a Dictionary
+# # 1️⃣ Create and Print a Dictionary
 
-Question: Create a dictionary students with keys "puneeth", "rama", "sita" and values 35, 45, 52. Print it.
+# # Question: Create a dictionary students with keys "puneeth", "rama", "sita" and values 35, 45, 52. Print it.
 
 students = {
     "puneeth": 35,
@@ -10,26 +10,26 @@ students = {
 print(students)
 
 
-Output:
+# # Output:
 
-{'puneeth': 35, 'rama': 45, 'sita': 52}
+# {'puneeth': 35, 'rama': 45, 'sita': 52}
 
-2️⃣ Access Keys and Values
+# 2️⃣ Access Keys and Values
 
-Question: Print all keys and values of the dictionary.
+# Question: Print all keys and values of the dictionary.
 
 print(students.keys())
 print(students.values())
 
 
-Output:
+# Output:
 
-dict_keys(['puneeth', 'rama', 'sita'])
-dict_values([35, 45, 52])
+# dict_keys(['puneeth', 'rama', 'sita'])
+# dict_values([35, 45, 52])
 
-3️⃣ Check if a Key Exists
+# 3️⃣ Check if a Key Exists
 
-Question: Check if "puneeth" exists in the dictionary.
+# Question: Check if "puneeth" exists in the dictionary.
 
 if "puneeth" in students:
     print("yes")
@@ -37,60 +37,60 @@ else:
     print("no")
 
 
-Output:
+# Output:
 
-yes
+# yes
 
-4️⃣ Delete a Key
+# 4️⃣ Delete a Key
 
-Question: Delete "puneeth" from the dictionary.
+# Question: Delete "puneeth" from the dictionary.
 
 del students["puneeth"]
 print(students)
 
 
-Output:
+# Output:
 
-{'rama': 45, 'sita': 52}
+# {'rama': 45, 'sita': 52}
 
-5️⃣ Update Values
+# 5️⃣ Update Values
 
-Question: Update the dictionary with new values.
+# Question: Update the dictionary with new values.
 
 students.update({"puneeth":12, "rama":15, "sita":23})
 print(students)
 
 
-Output:
+# Output:
 
-{'puneeth': 12, 'rama': 15, 'sita': 23}
+# {'puneeth': 12, 'rama': 15, 'sita': 23}
 
-6️⃣ Add a New Key
+# 6️⃣ Add a New Key
 
-Question: Add a new key "age" with value 21. Print the updated dictionary.
+# Question: Add a new key "age" with value 21. Print the updated dictionary.
 
 students["age"] = 21
 print(students)
 
 
-Output:
+# Output:
 
-{'puneeth': 12, 'rama': 15, 'sita': 23, 'age': 21}
+# {'puneeth': 12, 'rama': 15, 'sita': 23, 'age': 21}
 
-7️⃣ Get Items as Tuples
+# 7️⃣ Get Items as Tuples
 
-Question: Print all dictionary items (key-value pairs) as tuples.
+# Question: Print all dictionary items (key-value pairs) as tuples.
 
 print(students.items())
 
 
-Output:
+# Output:
 
-dict_items([('puneeth', 12), ('rama', 15), ('sita', 23), ('age', 21)])
+# dict_items([('puneeth', 12), ('c 15), ('sita', 23), ('age', 21)])
 
-8️⃣ Create Dictionary from Two Lists
+# 8️⃣ Create Dictionary from Two Lic
 
-Question: Create a dictionary using keys = ["a","b","c"] and values = [1,2,3].
+# Question: Create a dictionary uceys = ["a","b","c"] and values = [1,2,3].
 
 keys = ["a", "b", "c"]
 values = [1, 2, 3]
@@ -98,13 +98,13 @@ result = dict(zip(keys, values))
 print(result)
 
 
-Output:
+# Output:
 
-{'a': 1, 'b': 2, 'c': 3}
+# {'a': 1, 'b': 2, 'c': 3}
 
-9️⃣ Find the Topper (Maximum Value)
+# 9️⃣ Find the Topper (Maximum Valuc
 
-Question: Find the student with the highest marks.
+# Question: Find the student withcighest marks.
 
 students = {
     "puneeth": 35,
@@ -115,6 +115,6 @@ topper = max(students, key=students.get)
 print(topper, students[topper])
 
 
-Output:
+# Output:
 
-vandana 52
+# vandana 52
