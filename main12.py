@@ -180,8 +180,8 @@ result=[x for x in name if x in "aeiou"]
 print(result)
 
 
-
-
-
-
+n=2
+# print(type(n))
+x=(n)
+print(x,sep="-")
 
