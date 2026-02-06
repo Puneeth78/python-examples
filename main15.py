@@ -53,3 +53,9 @@ except Exception as e:
 
 finally:
     print("the program is close")
+
+# short end if else
+age=int(input("enter the age: "))
+x= "eligable for vote" if  age>18 else "not eligable got vote"
+print(x)
+
