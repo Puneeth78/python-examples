@@ -76,17 +76,17 @@ def func(a, b=[]):
 print(func(1))
 print(func(2))
 
-class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
-        res = ""
+# class Solution:
+#     def longestCommonPrefix(self, strs: List[str]) -> str:
+#         res = ""
         
-        for i in range(len(strs[0])):
-            for s in strs:
-                if i == len(s) or s[i] != strs[0][i]:
-                    return res
-            res += strs[0][i]   # ✅ moved outside inner loop
+#         for i in range(len(strs[0])):
+#             for s in strs:
+#                 if i == len(s) or s[i] != strs[0][i]:
+#                     return res
+#             res += strs[0][i]   # ✅ moved outside inner loop
             
-        return res 
+#         return res 
 
 
 A=[1,2,3,4,5,6]
