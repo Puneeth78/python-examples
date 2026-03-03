@@ -191,7 +191,7 @@ while count<=5:
     print(count)
     count+=1
 
-color=["green","pink","yellow","red"]
+color=["geren","pink","yellow","red"]
 for i in color:
     for j in i:
         print(f"i:{i} and j:{j}")
