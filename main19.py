@@ -115,6 +115,7 @@ for i in range(n):
         print("*",end=" ")
     print()
 
+# diamond pattern
 print("dimond pattern")
 n=5
 for i in range(n-1):
@@ -172,4 +173,117 @@ for i in range(n):
           print("*",end=" ")
         else:
             print(" ",end=" ")
+    print()
+
+# hallow diamond pattern
+print("hollow diamond pattern")
+
+
+# Upper Part
+n=5
+for i in range(n):
+    for j in range(i,n):
+        print(" ",end=" ")
+
+    for j in range(i):
+        if  j==0:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+
+    for j in range(i+1):
+        if  j==i:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+# Lower Part
+for i in range(n-2,-1, -1):
+    for j in range(i,n):
+        print(" ",end=" ")
+
+    for j in range(i):
+        if j==0:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+
+    for j in range(i+1):
+        if j==i:
+            print("*",end="")
+        else:
+            print(" ",end=" ")
+    print()
+
+
+n=4
+m=5
+for i in range(n):
+    for j in range(m):
+        print("*",end=" ")
+    print()
+
+n=4
+triangle=[]
+for i in range(1,n+1):
+    triangle.append("*"*n)
+print(triangle)
+
+
+print("hallow inverted triangle")
+n=5
+for i in range(n-2,-1, -1):
+    for j in range(i,n):
+        print(" ",end=" ")
+
+    for j in range(i):
+        if j==0 or i==0:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+
+    for j in range(i+1):
+        if j==i:
+            print("*",end="")
+        else:
+            print(" ",end=" ")
+    print()
+
+# reverse pyramid
+print("hill pattern reverse")
+n=5
+for i in range(n):
+    for j in range(i+1):
+        print(" ",end=" ")
+    for j in range(i,n-1):
+        print("*",end=" ")
+    for j in range(i,n):
+        print("*",end=" ")
+    print()
+
+print("Hollow Reverse Pyramid")
+n = 5
+
+for i in range(n):
+    
+    # left spaces
+    for j in range(i):
+        print(" ", end="")
+    
+    width = 2*(n-i) - 1   # total stars width
+    
+    for j in range(width):
+        
+        # first row full stars
+        if i == 0:
+            print("*", end="")
+        
+        # first and last star
+        elif j == 0 or j == width - 1:
+            print("*", end="")
+        
+        else:
+            print(" ", end="")
+    
     print()
