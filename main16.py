@@ -215,3 +215,38 @@ def print_name(n):
     print_name(n-1)
 print_name(4)
 
+sentence="hello world hello"
+sentence_lst=sentence.split()
+# print(sentence_lst)
+dict={}
+for word in sentence_lst:
+    if word in dict:
+        dict[word]+=1
+    else:
+        dict[word]=1
+print(dict)
+
+# sumof first even natural nunbers
+n = int(input("Enter n: "))
+sum_even = 0
+
+for i in range(1, n+1):
+    sum_even += 2*i
+
+print("Sum:", sum_even)
+
+# binary to decimal using while loop
+bn=int(input("enter the number: "))
+dec=0
+i=0
+while bn>0:
+    r=bn%10
+    exp=r*(2**i)
+    dec=dec+exp
+    bn//=10
+    i+=1
+print(dec)
+
+bn=input("enter the number: ")
+decimal=int(bn,2)
+print(decimal)
